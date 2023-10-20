@@ -6,7 +6,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Web;
 
-namespace UDW.Library
+namespace PTUDW.Library
 {
     public static class XString
     {

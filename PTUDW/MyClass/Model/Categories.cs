@@ -25,7 +25,7 @@ namespace MyClass.Model
         public int? ParentId { get; set; }
 
         [Display(Name = "Sắp xếp")]
-        public int? Order { get; set; }
+        public int? Order { get; set; }   //khong cho phep null
 
         [Display(Name = "Mô tả")]
         [Required(ErrorMessage = "Mô tả không được để trống")]
