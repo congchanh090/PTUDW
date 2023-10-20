@@ -28,16 +28,12 @@ namespace MyClass.DAO
             {
                 case "Index"://status == 1,2
                     {
-                        list = db.Categories
-                        .Where(m => m.Status != 0)
-                        .ToList();
+                        list = db.Categories.Where(m => m.Status != 0).ToList();
                         break;
                     }
                 case "Trash"://status == 0
                     {
-                        list = db.Categories
-                        .Where(m => m.Status == 0)
-                        .ToList();
+                        list = db.Categories  .Where(m => m.Status == 0)  .ToList();
                         break;
                     }
                 default:
@@ -48,6 +44,7 @@ namespace MyClass.DAO
             }
             return list;
         }
+
 
         /////////////////////////////////////////////////////////////////////////////////////
         //Hien thi danh sach 1 mau tin (ban ghi)
